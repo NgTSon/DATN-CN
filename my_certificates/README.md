@@ -1,4 +1,8 @@
-                                       ####$$$$$   Create new Certificates for ESP32 matter ############
+
+<img width="1905" height="729" alt="image" src="https://github.com/user-attachments/assets/a7ae5321-9add-4b12-9971-2d3a36f8c34a" />
+
+
+####$$$$$   Create new Certificates for ESP32 matter ############
 Warning:  add:
 1. The first thing to do is Export your custom VID/PID as environment variables to decrease chances of clerical error when 
 editing your command arguments:
