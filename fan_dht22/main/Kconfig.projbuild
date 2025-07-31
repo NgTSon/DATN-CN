@@ -1,0 +1,9 @@
+menu "App Driver Configuration"
+menu "Fan driver configuration"
+    config BLDC_PWM_GPIO
+            int "BLDC PWM GPIO"
+            default 5
+            help
+                GPIO to use for BLDC PWM signal.
+endmenu
+endmenu
