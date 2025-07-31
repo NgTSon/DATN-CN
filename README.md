@@ -14,6 +14,3 @@ Xây dụng mô hình nhà thông minh:
 
 <img width="1485" height="764" alt="image" src="https://github.com/user-attachments/assets/6897c8b3-9ca4-41fc-a112-19d6749ec133" />
 
-Node Router 1<img width="355" height="105" alt="image" src="https://github.com/user-attachments/assets/052c4ccc-04b1-4fca-b6e0-a90157767534" />
-
-<img width="948" height="760" alt="image" src="https://github.com/user-attachments/assets/64150895-dc35-45f7-b254-1a6f56f3ef57" />
