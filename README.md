@@ -16,8 +16,9 @@ Xây dụng mô hình nhà thông minh:
 
 <img width="1203" height="767" alt="image" src="https://github.com/user-attachments/assets/69a7f3bc-43d9-42a9-a215-a2951aeb26c1" />
 
-<img width="1722" height="721" alt="image" src="https://github.com/user-attachments/assets/907c6c4c-48df-4b47-b5d5-e495b4cee0a4" />
+<img width="356" height="542" alt="image" src="https://github.com/user-attachments/assets/a9900dbd-e5be-4c05-9273-456989e99ba1" />
 
+<img width="1722" height="721" alt="image" src="https://github.com/user-attachments/assets/907c6c4c-48df-4b47-b5d5-e495b4cee0a4" />
 
 <img width="1360" height="763" alt="image" src="https://github.com/user-attachments/assets/c68db3c1-1aef-4198-a46c-aa05b4f70c12" />
 
