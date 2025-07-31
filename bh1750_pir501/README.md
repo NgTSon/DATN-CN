@@ -1,14 +1,2 @@
-## Set-Up Button Factoryreset in sdkconfig.defaults.esp32...
-
-# ESP32-DevKitC Settings
-# Buttons
-CONFIG_BSP_BUTTONS_NUM=1
-CONFIG_BSP_BUTTON_1_TYPE_GPIO=y
-CONFIG_BSP_BUTTON_1_GPIO=0
-CONFIG_BSP_BUTTON_1_LEVEL=0
-
-# Button
-CONFIG_BUTTON_PERIOD_TIME_MS=20
-CONFIG_BUTTON_LONG_PRESS_TIME_MS=5000
-
-######
+<img width="957" height="760" alt="image" src="https://github.com/user-attachments/assets/4eaac2f0-ac56-40ef-bb13-c63d583b63eb" />
+<img width="926" height="1000" alt="image" src="https://github.com/user-attachments/assets/37282435-e5c2-48e3-aaa9-d44781797d6e" />
