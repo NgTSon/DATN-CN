@@ -1,7 +1,7 @@
 Tìm hiểu về các công nghệ nhà thông minh:
    -	Hệ sinh thái mã nguồn đóng và hệ sinh thái mã nguồn mở.
    -	Các giao thức không dây: Wi-Fi, Bluetooth, Zigbee, Thread.
--	Giao thức chuẩn kết nối Matter.
+   -	Giao thức chuẩn kết nối Matter.
 Xây dụng mô hình nhà thông minh:
    -	Thiết kế tổng quan hệ thống.
    -	Lựa chọn linh kiện, thiết kế schematic, PCB, hàn mạch in.
