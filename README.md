@@ -1,0 +1,19 @@
+Tìm hiểu về các công nghệ nhà thông minh:
+   -	Hệ sinh thái mã nguồn đóng và hệ sinh thái mã nguồn mở.
+   -	Các giao thức không dây: Wi-Fi, Bluetooth, Zigbee, Thread.
+-	Giao thức chuẩn kết nối Matter.
+Xây dụng mô hình nhà thông minh:
+   -	Thiết kế tổng quan hệ thống.
+   -	Lựa chọn linh kiện, thiết kế schematic, PCB, hàn mạch in.
+   -	Thiết kế các node Matter over Thread trong hệ thống: node định tuyến điều khiển quạt và cảm biến DHT22, node định tuyến cảm biến ánh sáng và cảm biến chuyển động, node con điều khiển đèn.
+   -	Tạo chứng chỉ xác thức cho các thiết bị Matter.
+   -	Thiết kế Border Router (Bộ định tuyến biên).
+   -	Xây dựng thiết bị điều khiển trung tâm từ nền tảng mã nguồn mở Home Assistant.
+   -	Sử dụng cấu hình các tích hợp từ Home Assistant: Matter Server, Thread, Cloudflare, HomeKit Bridge, liên kết Google Home App.
+
+
+<img width="1485" height="764" alt="image" src="https://github.com/user-attachments/assets/6897c8b3-9ca4-41fc-a112-19d6749ec133" />
+
+Node Router 1<img width="355" height="105" alt="image" src="https://github.com/user-attachments/assets/052c4ccc-04b1-4fca-b6e0-a90157767534" />
+
+<img width="948" height="760" alt="image" src="https://github.com/user-attachments/assets/64150895-dc35-45f7-b254-1a6f56f3ef57" />
