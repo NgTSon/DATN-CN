@@ -34,7 +34,7 @@ static motor_parameter_t motor_parameter = {
     .target_speed = 0,
 };
 
-// Hàm khởi tạo driver
+// Function init driver
 esp_err_t fan_pwm_init() {
     esp_err_t ret;
 
@@ -83,7 +83,7 @@ esp_err_t fan_pwm_set_percent_speed(uint8_t percent) {
     return ESP_OK;
 }
 
-// Hàm điều khiển mode của quạt
+// Function mode controll of Fan
 esp_err_t fan_pwm_set_fanmode(uint8_t status) {
     switch (status) {
         case 0: // OFF mode
