@@ -55,7 +55,7 @@ void updateMatterWithValues()
  */
 int16_t app_driver_read_light_sensor(uint16_t endpoint_id)
 {
-    // Trả về giá trị ánh sáng hiện tại
+    // Return value present
     return light_sensor_lux;
 }
 
@@ -110,7 +110,7 @@ static void BH1750_task(void *pvParameter)
             ESP_LOGI(TAG, "Lux: %d", lux);
         }
 
-        light_sensor_lux = (int16_t)(10000 * log10(lux)); // Chuyển đổi giá trị lux theo chuẩn Matter
+        light_sensor_lux = (int16_t)(10000 * log10(lux)); // Convert value lux by standard Matter
 
         // Update Matter values
         updateMatterWithValues();
@@ -131,9 +131,6 @@ app_driver_handle_t app_driver_BH_sensor_init()
     // Return a placeholder value (you may need to adapt the return type)
     return (app_driver_handle_t)1;
 }
-
-
-
 
 /////////////////////////////////// PIR ///////////////////////
 void occupancy_sensor_notification(uint16_t endpoint_id, bool occupancy, void *user_data)
