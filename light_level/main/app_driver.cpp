@@ -27,10 +27,10 @@ using namespace esp_matter;
 #define LEDC_TIMER      LEDC_TIMER_0
 #define LEDC_FREQUENCY  5000    // Tần số PWM (Hz)
 
-// Biến lưu trữ trạng thái On/Off
+// Status On/Off
 static bool is_led_on = false;
 
-// Hàm khởi tạo PWM
+// Function init PWM
 static void app_driver_pwm_init()
 {
     // Cấu hình timer cho LEDC
@@ -56,7 +56,7 @@ static void app_driver_pwm_init()
     ESP_ERROR_CHECK(ledc_channel_config(&ledc_channel));
 }
 
-// Hàm điều khiển On/Off LED
+// Function controll On/Off LED
 static esp_err_t app_driver_light_set_on_off(esp_matter_attr_val_t *val)
 {
     ESP_LOGI(TAG, "Set LED On/Off: %d", val->val.b);
@@ -76,7 +76,7 @@ static esp_err_t app_driver_light_set_on_off(esp_matter_attr_val_t *val)
     return ESP_OK;
 }
 
-// Hàm điều chỉnh độ sáng bằng PWM
+// Function controll light = PWM
 static esp_err_t app_driver_light_set_pwm(esp_matter_attr_val_t *val)
 {
     ESP_LOGI(TAG, "Set PWM Level: %d", val->val.u8);
@@ -90,7 +90,7 @@ static esp_err_t app_driver_light_set_pwm(esp_matter_attr_val_t *val)
     return ESP_OK;
 }
 
-// Hàm cập nhật thuộc tính
+// Function update attribute
 esp_err_t app_driver_attribute_update(app_driver_handle_t driver_handle, uint16_t endpoint_id, uint32_t cluster_id,
                                       uint32_t attribute_id, esp_matter_attr_val_t *val)
 {
@@ -111,7 +111,7 @@ esp_err_t app_driver_attribute_update(app_driver_handle_t driver_handle, uint16_
     return err;
 }
 
-// Hàm khởi tạo driver LED
+// Function init driver LED
 app_driver_handle_t app_driver_light_init()
 {
     ESP_LOGI(TAG, "Initializing LED driver...");
@@ -119,7 +119,7 @@ app_driver_handle_t app_driver_light_init()
     return nullptr;
 }
 
-// Hàm đặt giá trị mặc định
+// Function set value default
 esp_err_t app_driver_light_set_defaults(uint16_t endpoint_id)
 {
     esp_err_t err = ESP_OK;
@@ -129,13 +129,13 @@ esp_err_t app_driver_light_set_defaults(uint16_t endpoint_id)
     attribute_t *attribute = NULL;
     esp_matter_attr_val_t val = esp_matter_invalid(NULL);
 
-    // Bật đèn mặc định
+    // Set on Default
     cluster = cluster::get(endpoint, OnOff::Id);
     attribute = attribute::get(cluster, OnOff::Attributes::OnOff::Id);
     attribute::get_val(attribute, &val);
     err |= app_driver_light_set_on_off(&val);
 
-    // Đặt độ sáng mặc định
+    // Set on level Default
     cluster = cluster::get(endpoint, LevelControl::Id);
     attribute = attribute::get(cluster, LevelControl::Attributes::CurrentLevel::Id);
     attribute::get_val(attribute, &val);
